@@ -7,6 +7,7 @@ import {validateSignin, validateSignup} from "../lib/validations/userValidation.
 // @Method: POST
 // @Endpoint: api/auth/signin
 // @AccessType: public
+// @AccessType: public
 const signin = async (req, res) => {
     // validation
     const error = await validateSignin(req.body);
